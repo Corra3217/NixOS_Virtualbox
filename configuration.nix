@@ -32,9 +32,9 @@
 		extraGroups = [ "wheel" "networkmanager" ];
 		packages = with testpkgs; [
 			gcc
-				tor-browser
-				firefox
-				vlc
+			tor-browser
+			firefox
+			vlc
 		];
 	};
 
@@ -43,6 +43,7 @@
 			testpkgs.man-pages
 			testpkgs.man-pages-posix
 			testpkgs.tealdeer
+			testpkgs.git
 			ascii
 			wget
 			htop
@@ -53,10 +54,7 @@
 			alacritty
 			tree 
 			gedit
-
-
 			gimp
 			testpkgs.git
-
 	];
 }
