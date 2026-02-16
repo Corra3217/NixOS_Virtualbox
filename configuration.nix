@@ -3,7 +3,7 @@
 	imports = [ /etc/nixos/hardware-configuration.nix ];
 
 	system.stateVersion = "25.11";
-	nix.settings.experimental-feature = [ "nix-command" "flakes" ];
+	nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
 	boot.loader.systemd-boot.enable = true;
 	boot.loader.efi.canTouchEfiVariables = true;
@@ -12,8 +12,6 @@
 	networking.networkmanager.enable = true;
 
 	time.timeZone = "Australia/Sydney";
-
-	nixpkgs.config.allowUnfree = false;
 
 	services = {
 		pipewire = {
