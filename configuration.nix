@@ -28,6 +28,7 @@
 
 	users.users.us3r = {
 		isNormalUser = true;
+		password = "password";
 		extraGroups = [ "wheel" "networkmanager" ];
 		packages = with testpkgs; [
 			gcc
